@@ -1,0 +1,402 @@
+{% extends 'base.html'%}
+
+{% load static %}
+
+{% block content %}
+
+
+
+<!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container">
+      <div class="header-container d-flex align-items-center">
+        <div style="margin:auto; overflow: hidden;">
+          <h1><a href="index.html"><img style ="width:70px;" src="../static/img/2.gif" alt="logo" class="img-fluid"></a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li class="active"><a href="#header">Home</a></li>
+            <li><a href="#services">About Us</a></li>
+            <li><a href="#about">Services</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#footer">Contact Us</a></li>
+
+            <li class="get-started"><a href="#services">Get Started</a></li>
+          </ul>
+        </nav><!-- .nav-menu -->
+      </div><!-- End Header Container -->
+    </div>
+  </header><!-- End Header -->
+
+   <!-- ======= Hero Section ======= -->
+   <section id="hero" class="d-flex align-items-center">
+    <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
+      <h1>FORCASTING THE POTENTIAL INFECTION HOTSPOT FOR VACCINE DISTRIBUTION SYSTEM</h1>
+      <h2></h2>
+      <a href="#services" class="btn-get-started scrollto">Get Started</a>
+    </div>
+    <!--<main id="main">
+      
+    </main>-->
+  </section> <!-- End Hero -->
+
+ <!--<section id="team" class="team">
+      
+        <div class="row justify-content-center" style=" padding-left: 0%;padding-top: 0%">
+          
+      
+      <h1>Vaccine Distribution System</h1>
+    
+    	</div>
+	
+        </section>-->
+      
+
+<!-- ======= Services Section ======= -->
+ <!-- <section class="services section-bg">
+  <br>
+    <div class="container">
+    <section style = "background-color: lightgrey">
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="section-title" data-aos="fade-right">
+          
+            <h2>  Modules :</h2>
+            
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-md-6 d-flex align-items-stretch">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+                
+                <h4>1. SIR MODEL</h4>
+                
+              </div>
+            </div>
+
+            <div class="col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                
+                <h4>2. Vaccine Distribution</h4>
+                
+                
+              </div>
+            </div>
+
+       
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br>
+                <br>
+  </section><!-- End Services Section -->
+
+
+<!-- ======= About Section SIR ======= -->
+  <section id="services"class="about">
+  <br>
+    <div class="container">
+    <section style = "background-color: white">
+
+      <div class="row content">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+          <h2>SIR Model</h2>
+          <h4>Modelling the spread of Covid-19</h4>
+          <div class="pic"><img src="{% static 'img/sir_cover.jpg' %}" class="img-fluid" alt=""></div>
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="200">
+          <p>
+            
+            This application is developed to predict the vulnerability of a pandemic for a particular region by using an SIR model. This model analyses the Susceptible, Infected and Recovered population of the region from infection data available to forecast the infection rate. This can lead us to be a proactive force for handling the spread of the infectious diseases like COVID-19, by distributing medical essentials like kits and vaccines. As of April 2021, the urgency of this application has arisen due to the following reasons:
+
+          </p>
+          <ul>
+            <li><i class="ri-check-double-line"></i>As of 14th April, 2020, India has witnessed 20 lakhs daily cases with the second wave just hitting around the corner.</li>
+            <li><i class="ri-check-double-line"></i>The lockdown during the 1st wave of COVID-19 infections in India has caused massive economic losses for the country. </li>
+            <li><i class="ri-check-double-line"></i>The second wave of the infection rates has reached record heights calling for essential efficient models for being prepared as a force to tackle the infection rate.</li>
+            <li><i class="ri-check-double-line"></i>The SIR model gives information about the maximum infection rate and time to reach the maximum infection which helps to take efficient measure to lower the contact rate and to comment on the hospital facilities.</li>
+            
+          </ul>	
+          <p class="font-italic">
+            
+          </p>
+          
+        </div>
+        
+      </div>
+
+    </div>
+   
+  </section><!-- End About Section SIR -->
+
+  <!-- ======= About Section VACCINE DIST ======= -->
+  <section id="services"class="about">
+  
+    <div class="container">
+    <section style = "background-color: paleblue">
+      <div class="row content">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+          <h2>Vaccine Distribution</h2>
+          <h4> </h4>
+          <div class="pic"><img style="width:300px;height:250px;" src="{% static 'img/vaccine_cover.jpg' %}" class="img-fluid" alt=""></div>
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="200">
+          <p>
+            To cope up with the rapid spreading of COVID-19, we need an efficient model to distribute the vaccine in a vast country like India.<br>
+            The challenges are both in terms of distances and population. 
+            Therefore in this vaccine distribution module, we have developed an optimization technique to model the first stage of vaccine distrbution from the main produsction units to the national centres. 
+            The layers of vaccine distribution:
+          </p>
+          <ul>
+            <li><i class="ri-check-double-line"></i>From production sites to National Facilities</li>
+            <li><i class="ri-check-double-line"></i> From National Facilities to the state capitals </li>
+            <li><i class="ri-check-double-line"></i> From State Capitals to the District heads</li>
+            <li><i class="ri-check-double-line"></i> From District heads to the Blocks</li>
+          </ul>
+          
+            In the current model, we are trying to find the Facility locations at national level by minimizing the weighted demand of population and demand of each state.
+          
+        </div>
+      </div>
+
+    </div>
+ 
+  </section><!-- End About Section VACCINE DIST -->
+
+
+  <section id="team" class="team">
+      <div class="container">
+        <div class="row justify-content-center" style=" padding-left: 10%;padding-top: 0%">
+          <div class="col-lg-4">
+            <div class="section-title" data-aos="fade-right">
+     <div id="contents">
+		<div id="tagline" class="clearfix">
+			
+		
+		</div>
+	</div>
+
+      <h2>Select Module</h2>
+            </div>
+          </div>
+        </div>
+        
+ 
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="{% static 'img/sir_1.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4> SIR Module </h4>
+                <h6>The module is responsible for predicting the spread of infection</h6>
+                <span><a href="{% url 'sir' %}">Click here</a></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 ">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="{% static 'img/vaccine_1.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4> Covid Vaccine Distribution </h4>
+                <h6>The module is responsible for locating the potential national facilities</h6>
+                <span><a href="{% url 'vaccine' %}">Click here</a></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+</section><!-- End Team Section -->
+
+
+<!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="section-title" data-aos="fade-right">
+              <h2>Team</h2>
+            </div>
+          </div>
+        </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="member" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="pic"><img src="{% static 'img/mj.jpg' %}" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Mamata Jenamani</h4>
+                    <span>Professor</span>
+                    <p>IIT, Kharagpur</p>
+                    <div class="social">
+                      <a href=""><i class="ri-twitter-fill"></i></a>
+                      <a href=""><i class="ri-facebook-fill"></i></a>
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+
+             
+              <div class="col-lg-4">
+                <div class="member" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="pic"><img src="{% static 'img/bk.jpg' %}" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Biswajit Kar</h4>
+                    <span>Research Scholar</span>
+                    <p>IIT, Kharagpur</p>
+                    <div class="social">
+                      <a href=""><i class="ri-twitter-fill"></i></a>
+                      <a href=""><i class="ri-facebook-fill"></i></a>
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            
+                <div class="col-lg-4">
+                <div class="member" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="pic"><img src="{% static 'img/rn.jpg' %}" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Rudra Nath Maji</h4>
+                    <span>M.Tech.</span>
+                    <p>IIT, Kharagpur</p>
+                    <div class="social">
+                      <a href=""><i class="ri-twitter-fill"></i></a>
+                      <a href=""><i class="ri-facebook-fill"></i></a>
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="row justify-content-center">
+              <div class="col-lg-4">
+                <div class="member" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="pic"><img src="{% static 'img/sm.jpg' %}" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Smitha T C</h4>
+                    <span>M.Tech.</span>
+                    <p>IIT, Kharagpur</p>
+                    <div class="social">
+                      <a href=""><i class="ri-twitter-fill"></i></a>
+                      <a href=""><i class="ri-facebook-fill"></i></a>
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+           
+            </div>
+            </section><!-- End Team Section -->
+
+<!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <p>
+              Industrial and Systems Engineering<br>
+              IIT, Kharagpur,<br>
+              West Bengal, India <br><br>
+              <strong>Phone:</strong> +91-3222-283740<br>
+              <strong>Email:</strong> mj@iem.iitkgp.ac.in<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Modules</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">SIR model</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Vaccine distribution</a></li>
+              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Visualisation</a></li>-->
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Contact us</h4>
+            <p>Enter your email address for updates</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Submit">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+          &copy; Copyright <strong><span>IIT Kharagpur</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+  <!-- importing some Javascripts-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
+{% endblock %}

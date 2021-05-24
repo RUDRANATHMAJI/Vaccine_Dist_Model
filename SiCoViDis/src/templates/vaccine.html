@@ -1,0 +1,179 @@
+{% extends 'base.html'%}
+
+{% load static %}
+
+{% block content %}
+
+<H1 style= "padding-top:10%; padding-left: 30%;"> VACCINE DISTRIBUTION</H1>
+<br>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Vaccine distribution Facility Locations</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5></h5>
+                <div>The potential locations to be opened as National Facilities in order of their criticality is given below : <br><span id="sl"></span></div>
+                
+                
+                <div id="prediction"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <!--<a class="btn btn-primary" href="/results" role="button">View DB</a>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Start about Section VACCINE DIST -->
+<section id="services"class="about">
+<section style = "background-image: url('https://res.cloudinary.com/devex/image/fetch/c_scale,f_auto,q_auto,w_720/https://lh6.googleusercontent.com/ez8ofKHKxxiw53f4vkR4EtqVlOxZciSs-gm94rPZLqLQcWQjk0DuU50kAIegQ-MB5KnrLFkO_yxwypaa1I4wNsw0Mxyqt-nMvcHS4dVISyus5d26F21lHZMbfdCUdPMXMPdZ3Dwz')">
+  <br>
+    <div class="container">
+    
+    <section style = "background-color: white">
+      <div class="row content">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+          <h2>Vaccine Distribution Model<h2>
+          <h4> </h4>
+          <div class="pic"><img src="{% static 'img/optim_mod_viz.png' %}" class="img-fluid" alt=""></div>
+          <br>
+          <h3><p style="margin-left: 2.5em;padding: 0 7em 0em 0;">Working of Model</p></h3>
+            <p style="margin-left: 2.5em;padding: 0 7em 2em 0;">This model predicts the most optimal National Facility Locations based on the number of facilities given as input by the user.</p>
+          </div>
+        <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="200">
+        
+          <p>
+          
+            The  Vaccine distribution optimization Model is developed to faciliate the distribution of vaccine in pandemic situations prevailing in the country.<br>
+            In this model we are trying to predict the facility locations at national level for Indian states with an objective to minimize the net weighted demand (demand * distance).<br>
+            <div class="pic"><img src="{% static 'img/optim_mod.png' %}" class="img-fluid" alt=""></div>
+            <br>
+            <h3>Model Parameters</h3>
+            The Parameters of the model are:
+          </p>
+          <ul>
+            <li><i class="ri-check-double-line"></i> 〖dist〗_ij=Distance between location i to location j</li>
+            <li><i class="ri-check-double-line"></i>  d_j = Demand of state j </li>
+            <li><i class="ri-check-double-line"></i>  y_ij = Binary Variable is equal to 1, if facility i is fulfiling the demand of location j, otherwise 0 </li>
+          </ul>
+          
+           <!--<div class="pic"><img src="{% static 'img/vacc_dist.jpg' %}" class="img-fluid" alt=""></div>-->
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <br>
+  </section><!-- End About Section VACCINE DIST -->
+
+  <!-- Start about Section VACCINE DIST -->
+<section id="services"class="about">
+<!--<section style = "background-image: url('https://res.cloudinary.com/devex/image/fetch/c_scale,f_auto,q_auto,w_720/https://lh6.googleusercontent.com/ez8ofKHKxxiw53f4vkR4EtqVlOxZciSs-gm94rPZLqLQcWQjk0DuU50kAIegQ-MB5KnrLFkO_yxwypaa1I4wNsw0Mxyqt-nMvcHS4dVISyus5d26F21lHZMbfdCUdPMXMPdZ3Dwz')">-->
+  <br>
+    <div class="container">
+    
+    <section style = "background-color: palegrey">
+      <div class="row content">
+        <div class="col-lg-6" data-aos="fade-center" data-aos-delay="100">
+          <h3>Potential Facility Locations</h3>
+                    
+          <br>
+          
+              <p style="margin-left: 2.5em;padding: 0 7em 2em 0;">The potential the locations for opening facilities are the state capitals, namely : <br>
+            
+              Hyderabad, Itanagar, Dispur, Patna, Raipur, Panaji, Gandhinagar, Chandigarh, Shimla, Ranchi, Bengaluru, Thiruvananthapuram, Bhopal, Mumbai, Imphal,Shillong, Aizawl, Kohima, Bhubaneswar, Jaipur, Gangtok, Chennai, Agartala, Lucknow, Dehradun, Kolkata <br></p>
+        <br>
+        <h3>Interpretation of Results</h3>
+
+        <p style="margin-left: 2.5em;padding: 0 7em 2em 0;">The results  in the pop-up are the National Facilties in order of their criticality, as obtained from SIR Model.</p>
+        
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="200">
+        
+          
+          
+          <h3>Indian Map pointing the locations</h3>
+            <div class="pic"><img style="width:400px;height:400px;" src="{% static 'img/fac_loc.png' %}" class="img-fluid" alt="" ></div>
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <br>
+  </section><!-- End About Section VACCINE DIST -->
+
+
+<div class="container pt-5">
+    <div class="row justify-content-md-center">
+        <div class="col-md-4">
+           
+            <form action="" id="post-form">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="sepal_length" ><h5>Enter the number of potential facility locations for vaccine distribution at national level</h5></label>
+                    <input type="number" step="1" class="form-control" id="sepal_length" placeholder="" required>
+                    
+                </div>
+
+                <div class="form-group">
+                    <label for="sucep1"><h5><font color='black'>Enter the distance matrix</font></h5></label>
+                    <input type="file"  class="multipart/form-data" id="sucep1" placeholder="" required>
+                </div>
+                
+                
+                <button style="height:40px;width:350px" type="submit" value="Submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).on('submit', '#post-form',function(e){
+        e.preventDefault();
+        $.ajax({
+            type:'POST',
+            url:'{% url "vaccine:submit_prediction" %}',
+            data:{
+                sepal_length:$('#sepal_length').val(),
+                sepal_width:$('#sepal_width').val(),
+                petal_length:$('#petal_length').val(),
+                petal_width:$('#petal_width').val(),
+                csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
+                action: 'post'
+            },
+            success:function(json) {
+                document.forms["post-form"].reset();
+                
+                document.getElementById("sl").innerHTML = json['sepal_length']
+                document.getElementById("sw").innerHTML = json['sepal_width']
+                document.getElementById("pl").innerHTML = json['petal_length']
+                document.getElementById("pw").innerHTML = json['petal_width']
+            },
+            error : function(xhr,errmsg,err) {
+
+            }
+        });
+    })
+</script>
+
+
+  
+
+
+
+   
+{% endblock %}
+
+
+
